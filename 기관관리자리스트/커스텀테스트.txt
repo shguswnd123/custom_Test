@@ -1,0 +1,30 @@
+2022-01-05
+1.
+www/web/inc/top.php
+top AdminListBoard생성
+버튼과 js생성.
+2.
+www/web/main.php
+include를 위하여 popup_admin_board.php 추가함.
+이렇게 하는 이유는 main.php에서 top.php를 불러들이는데 top.php에서 popup_admin_board.php
+파일을 bepopup에서 불러들이기 위해서임.
+3.
+www/web/page/popup_admin_board.php생성.
+4.
+www/web/page/popup_admin_board_notice.php
+파일을 만들꺼임.
+
+
+
+147 라인
+
+    <li class="mark"><?=$row['ORG_NAME']?></li>
+                    <li class="title" title="<?=$row['GROUP_NAME']?>"></li>
+                    <li class="write" title="<?=$row['USER_ID']?>"><?=$row['USER_NAME']?>&nbsp;<!--이름없으면 li가 width 값을 제대로 표현못해서 그냥 하나 넣어둠.--></li>
+                    <li class="uploaded"><?=$row['USER_NAME']?></li>
+                    <li class="view"><?=$row['EMAIL']?></li>
+
+
+
+
+contents.css작업도 할것임.
